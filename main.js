@@ -22,7 +22,7 @@ header.addEventListener("submit", function (e) {
   if (value !== "" && editFlag === false) {
     saveItemToLocalStorage(id, value);
     displayalret("Item added to the list", "green");
-    container.createAttribute("class", "show-list");
+    container.classList.add("show-list");
     // deafualt
     setBackToDefault();
     // save to local storage
@@ -61,7 +61,7 @@ clear.addEventListener("click", function () {
       list.removeChild(item);
     });
   }
-  container.removeAttribute("class", "show-list");
+  container.classList.remove("show-list");
   displayalret("All items cleared ", "red");
   // default // save to local storage
   setBackToDefault();
