@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"
+    />
+    <!-- css style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- page name -->
+    <title>to do list</title>
+  </head>
+  <body>
+    <section id="container">
+      <!-- add item  -->
+      <form id="header">
+        <!-- alret that show in certain conditions -->
+        <p id="alret"></p>
+        <!-- title  -->
+        <h3 id="title">add item to the list</h3>
+        <div id="add_item_container">
+          <!-- input to add item -->
+          <input type="text" id="item_name_input" placeholder="item name" />
+          <!-- button to add input value as a item  -->
+          <button type="submit" id="add_btn">submit</button>
+        </div>
+      </form>
+      <!-- items list -->
+      <div class="list">
+        <!-- the div that contains the items -->
+        <div id="itmes_container"></div>
+        <!-- clear all items in the list button -->
+        <button id="clear_btn">clear itmes</button>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
